@@ -18,8 +18,6 @@ module BillyMays
   POSTGRESQL_KEYWORDS = SQL_KEYWORDS | %w(
   )
   
-  class NotImplementedError < StandardError; end
-
   class CapitalizeWords
     attr_reader :keywords
     attr_accessor :filepath, :orig, :capitalized
