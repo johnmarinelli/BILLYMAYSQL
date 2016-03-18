@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'billy_mays'
+
+print BillyMays::Postgresql.new(ARGV[0]).capitalize.to_s
