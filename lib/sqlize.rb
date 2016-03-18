@@ -1,19 +1,15 @@
 require "sqlize/version"
+require 'pathname'
 
 module BillyMays
   # have you ever just wanted to shout SELECTed words?
+  
+  def self.load_json(filename)
+    kw_path = Pathname.new(File.dirname(__FILE__)).join '..', 'sqlize', 'keywords', filename
+    JSON.parse(File.read filename)
+  end
 
-  SQL_KEYWORDS = %w(
-    select
-    from
-    update
-    alter
-    set
-    where
-    limit
-    group by
-    as
-  )
+  SQL_KEYWORDS = self.load_json 'sql_keywords.json'
 
   POSTGRESQL_KEYWORDS = SQL_KEYWORDS | %w(
   )
