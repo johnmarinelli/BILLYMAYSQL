@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["john.marinelli.dev@gmail.com"]
 
   spec.summary       = %q{have u ever wanted to shout SELECTed words???/}
-  spec.description   = %q{now u can. UPDATE ur noob sql scripting FROM lowercase to uppercase}
-  spec.homepage      = "http://github.com/BILLYMAYSQL"
+  spec.description   = %q{have u ever wanted to shout SELECTed words???  now u can. UPDATE ur noob sql scripting FROM lowercase to uppercase}
+  spec.homepage      = "http://github.com/johnmarinelli/BILLYMAYSQL"
   spec.license       = "IDC"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
