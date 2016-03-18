@@ -13,7 +13,11 @@ sqlize my_sucky.sql
 # wokrs on inline strings 2 oh shit
 sqlize -c "select name from products where price < 20.00;"
 # => SELECT name FROM products WHERE price < 20.00;
+
+# may as well hotkey ur caps lock key to run this script cus u dont need it anymore
+sqlize my_sucky.sql > my_cool.sql
 ```
+
 
 ## Installation
 quit playin!!! `gem install sqlize` 
