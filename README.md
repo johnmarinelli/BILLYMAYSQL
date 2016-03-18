@@ -23,7 +23,7 @@ test ur shit
 
 ## Contributing
 john.marinelli@paypal.com
-*i only accept payments in increments of 100$*
+__IMPORTANT!!__ *i only accept payments in increments of 100$*
 
 ## License
 watever

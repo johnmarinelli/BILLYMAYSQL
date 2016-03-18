@@ -2,4 +2,11 @@
 
 require 'sqlize'
 
-print BillyMays::Postgresql.new(ARGV[0]).capitalize.to_s
+orig_str = ''
+if ARGV[0] == '-c'
+  orig_str = ARGV[1]
+else
+  orig_str = File.read ARGV[0]
+end
+
+print BillyMays::Postgresql.new(orig_str).capitalize.to_s

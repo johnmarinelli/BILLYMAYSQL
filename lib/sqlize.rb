@@ -20,10 +20,9 @@ module BillyMays
   
   class CapitalizeWords
     attr_reader :keywords
-    attr_accessor :filepath, :orig, :capitalized
-    def initialize(filepath)
-      @filepath= filepath
-      @orig = File.read @filepath
+    attr_accessor :orig, :capitalized
+    def initialize(orig)
+      @orig = orig
     end
 
     def capitalize
@@ -32,9 +31,16 @@ module BillyMays
     end
   end
 
+  class SQL < CapitalizeWords
+    def initialize(orig)
+      super orig
+      @keywords = SQL_KEYWORDS
+    end
+  end
+
   class Postgresql < CapitalizeWords
-    def initialize(filepath)
-      super filepath
+    def initialize(orig)
+      super orig
       @keywords = POSTGRESQL_KEYWORDS
     end
   end
