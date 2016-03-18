@@ -19,10 +19,11 @@ sqlize -c "select name from products where price < 20.00;"
 quit playin!!! `gem install sqlize` 
 
 ## Development
-just like writ tests or whatever.....
+test ur shit
 
 ## Contributing
 john.marinelli@paypal.com
+*i only accept payments in increments of 100$*
 
 ## License
 watever
