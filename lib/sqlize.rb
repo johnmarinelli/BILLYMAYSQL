@@ -1,4 +1,5 @@
 require "sqlize/version"
+require 'json'
 require 'pathname'
 
 module BillyMays
@@ -6,7 +7,7 @@ module BillyMays
   
   def self.load_json(filename)
     kw_path = Pathname.new(File.dirname(__FILE__)).join '..', 'sqlize', 'keywords', filename
-    JSON.parse(File.read filename)
+    JSON.parse(File.read kw_path filename)
   end
 
   SQL_KEYWORDS = self.load_json 'sql_keywords.json'
