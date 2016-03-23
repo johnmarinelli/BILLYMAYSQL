@@ -14,7 +14,7 @@ sqlize my_sucky.sql
 sqlize -c "select name from products where price < 20.00;"
 # => SELECT name FROM products WHERE price < 20.00;
 
-# may as well hotkey ur caps lock key to run this script cus u dont need it anymore
+# may asw ell toss ur caps lock out the widnow
 sqlize my_sucky.sql > my_cool.sql
 ```
 
