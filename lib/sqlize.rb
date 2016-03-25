@@ -7,13 +7,12 @@ module BillyMays
   
   def self.load_json(filename)
     kw_path = Pathname.new(File.dirname(__FILE__)).join '..', 'sqlize', 'keywords', filename
-    JSON.parse(File.read kw_path filename)
+    JSON.parse(File.read kw_path)
   end
 
   SQL_KEYWORDS = self.load_json 'sql_keywords.json'
 
-  POSTGRESQL_KEYWORDS = SQL_KEYWORDS | %w(
-  )
+  POSTGRESQL_KEYWORDS = SQL_KEYWORDS | self.load_json('postgres_keywords.json')
   
   class CapitalizeWords
     attr_reader :keywords

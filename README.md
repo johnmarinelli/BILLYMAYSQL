@@ -29,5 +29,9 @@ test ur shit
 john.marinelli@paypal.com
 __IMPORTANT!!__ *i only accept payments in increments of 100$*
 
+## Hype
+"SOME more sweet ass shit FROM john marinelli" - ice cube
+"this shit is teh best omg" - curtis '50 cent' jackson
+
 ## License
 watever
